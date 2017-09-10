@@ -34,6 +34,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - 3 x algorithm and system design on whiteboard within the same session.
   - 1 x algorithm coding on laptop and system design. This session involves writing code on your own laptop to solve 3 well-defined algorithm problems in around 45 minutes after which an engineer will come in and review the code with you. You are not supposed to run the code while working on the problem.
 - Tips:
+  - No front end questions were asked.
   - Asana places high emphasis on System Design and makes heavy use of the whiteboard. You do not necessarily have to write code for the algorithm question of the first three interviews.
   - All 4 sessions involve algorithms and system design. One of the sessions will be conducted by an Engineering Manager.
   - The last session will involve coding on your own laptop. Prepare your development environment in advance.
@@ -74,7 +75,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - 1 or 2 x algorithm on Google Doc.
 - On-site (Front End):
   - 3 x Front end on whiteboard. Have to use Vanilla JS (or at the most, jQuery).
-  - 2 x General algorithms on whiteboard.
+  - 2 x Algorithm on whiteboard.
 - Tips:
   - You are only allowed to use the whiteboard. No laptops involved.
   - In rare cases, candidates may even be allowed to skip the phone interview round and advanced to on-site directly.
@@ -83,7 +84,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
 
 - Recruiter phone screen.
 - Technical phone interview:
-  - 1 x Algorithm/front end over JSFiddle.
+  - 1 x Algorithm/Front end over JSFiddle.
 - On-site (Front End):
   - 4 x Front end on Coderpad/your own laptop. Use any language/framework.
   - 1 x Behavioural. Meet with an Engineering Manager and go through candidate's resume.
@@ -97,7 +98,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
 - Technical phone interview:
   - 1 x Algorithm over HackerRank CodePair and Skype.
 - On-site (General):
-  - 2 x Algorithms on whiteboard.
+  - 2 x Algorithm on whiteboard.
   - 1 x Decomposition (system design) on whiteboard.
 - On-site (Front End):
   - 1 x Front end on your own laptop. This session lasts about 1.5 hours. Use any library/framework.
@@ -105,3 +106,14 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
 - Tips:
   - I opted to use React and had to set up projects on the spot using `create-react-app`.
   - You may be asked to meet with Engineering Managers after the technical sessions and it's not necessarily a good/bad thing.
+
+## WhatsApp
+
+- Recruiter phone screen.
+- Technical phone interview:
+  - 2 x Algorithm over CoderPad.
+- On-site (Web Client Developer):
+  - 4 x Algorithm on whiteboard.
+- Tips:
+  - No front end questions were asked.
+  - 1 of the interviewers is an Engineering Manager.
