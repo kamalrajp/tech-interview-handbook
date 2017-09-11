@@ -5,7 +5,18 @@ The following interview formats are based on my experience interviewing with Bay
 
 For on-site interviews at smaller (non-public) companies, most will allow (and prefer) that you use your own laptop. Hence it is important that you prepare your development environment in advance.
 
-## Airbnb
+## Companies
+
+- [Airbnb](#airbnb)
+- [Asana](#asana)
+- [Dropbox](#dropbox)
+- [Facebook](#facebook)
+- [Google](#google)
+- [Lyft](#lyft)
+- [Palantir](#palantir)
+- [WhatsApp](#whatsapp)
+
+### Airbnb
 
 - Recruiter phone screen.
 - Technical phone interview:
@@ -26,7 +37,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - They seem to place high emphasis on compilable, runnable code in all their coding rounds.
   - Cross functional interviews will involve getting Airbnb employees from any discipline to speak with you. These interviews are mostly non-technical but are extremely important to Airbnb because they place a high emphasis on cultural fit. Do look up the Airbnb section of the behavioural questions to know what sort of questions to expect.
 
-## Asana
+### Asana
 
 - Recruiter phone screen.
 - Technical phone interview.
@@ -40,7 +51,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - The last session will involve coding on your own laptop. Prepare your development environment in advance.
   - Regardless of Product Engineer or Engineering Generalist position, their interview format and questions are similar.
 
-## Dropbox
+### Dropbox
 
 - Recruiter phone screen.
 - Technical phone interviews:
@@ -54,7 +65,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - Dropbox recruiters are very nice and will give you helpful information on what kind of questions to expect for the upcoming sessions.
   - One of the front end sessions involve coding up a pixel-perfect version of a real page on www.dropbox.com. You'll be given a spec of the desired page and you'll be asked to create a working version during the interview.
 
-## Facebook
+### Facebook
 
 - Recruiter phone screen.
 - Technical phone interviews:
@@ -68,7 +79,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - For the Jedi round, you may be asked a technical question at the end of it. Front end candidates will be given a small HTML/CSS problem nearing the end of the session.
   - For the Ninja rounds, you may be asked one to two questions depending on how fast you progress through the question.
 
-## Google
+### Google
 
 - Recruiter phone screen.
 - Technical phone interview:
@@ -80,7 +91,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - You are only allowed to use the whiteboard. No laptops involved.
   - In rare cases, candidates may even be allowed to skip the phone interview round and advanced to on-site directly.
 
-## Lyft
+### Lyft
 
 - Recruiter phone screen.
 - Technical phone interview:
@@ -92,7 +103,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - Can use whiteboard and/or laptop.
   - For front end coding, I opted to use React and had to set up the projects on the spot using `create-react-app`.
 
-## Palantir
+### Palantir
 
 - Recruiter phone screen.
 - Technical phone interview:
@@ -107,7 +118,7 @@ For on-site interviews at smaller (non-public) companies, most will allow (and p
   - I opted to use React and had to set up projects on the spot using `create-react-app`.
   - You may be asked to meet with Engineering Managers after the technical sessions and it's not necessarily a good/bad thing.
 
-## WhatsApp
+### WhatsApp
 
 - Recruiter phone screen.
 - Technical phone interview:
