@@ -10,21 +10,22 @@ While there are many awesome books like Cracking the Coding Interview and reposi
 
 ## Contents
 
-- [Algorithms Questions](algorithms)
+- **[Algorithms Questions](algorithms)**
   - Questions categorized by topic and company. Currently contains questions by Airbnb, Asana, Dropbox, Facebook, Lyft and Palantir.
   - **HELP WANTED** - Would like help in adding Google, Amazon, Microsoft and Apple questions!
-- [Design Questions](design)
-- [Domain-specific Questions](domain)
-- [Front End Study Notes](front-end)
+- **[Design Questions](design)**
+- **[Domain-specific Questions](domain)**
+- **[Front End Study Notes](front-end)**
   - Summarized notes on the various aspects of front end.
   - [Front End Job Interview Questions and Answers](front-end/interview-questions.md) ⭐
-- [Non-Technical Tips](non-technical)
+- **[Non-Technical Tips](non-technical)**
   - Random non-technical tips that cover behavioural and psychological aspects, interview formats and "Do you have any questions for me?".
   - [Behavioural Questions](non-technical/behavioural.md)
   - [Interview Formats](non-technical/format.md)
   - [Psychological Tricks](non-technical/psychological.md)
   - [Questions to Ask](non-technical/questions-to-ask.md)
-- [Utilities](utilities)
+  - [Negotiation Tips](non-technical/negotiation.md)
+- **[Utilities](utilities)**
   - Snippets of algorithms/code that will help in coding questions.
 
 ## Contributing
