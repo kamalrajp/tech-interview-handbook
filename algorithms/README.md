@@ -149,7 +149,7 @@ The next section dives deep into practical tips for specific topics of algorithm
 - For questions where summation or multiplication of a subarray is involved, pre-computation using hashing or a prefix/suffix sum/product might be useful.
 - If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number.
 
-#### Questions
+#### Practice Questions
 
 - [Two Sum](https://leetcode.com/problems/two-sum/)
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
@@ -168,7 +168,7 @@ The next section dives deep into practical tips for specific topics of algorithm
 - Toggle the k<sup>th</sup> bit: `num ^= (1 << k)`.
 - To check if a number is a power of 2, `num & num - 1 == 0`.
 
-##### Questions
+#### Practice Questions
 
 - [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
@@ -183,7 +183,7 @@ The next section dives deep into practical tips for specific topics of algorithm
 - The only way to get better at DP is to practice. It takes some amount of practice to be able to recognize that a problem can be solved by DP.
 - Sometimes you do not need to store the whole DP table in memory, the last two values or the last two rows of the matrix will suffice.
 
-##### Questions
+#### Practice Questions
 
 - 0/1 Knapsack
 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
@@ -242,7 +242,7 @@ def traverse(matrix):
       dfs(i, j)
 ```
 
-##### Questions
+#### Practice Questions
 
 - [Clone Graph](https://leetcode.com/problems/clone-graph/)
 - [Course Schedule](https://leetcode.com/problems/course-schedule/)
@@ -274,7 +274,7 @@ def merge_overlapping_intervals(a, b):
   return [min(a[0], b[0]), max(a[1], b[1])]
 ```
 
-##### Questions
+#### Practice Questions
 
 - [Insert Interval](https://leetcode.com/problems/insert-interval/)
 - [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
@@ -301,7 +301,7 @@ def merge_overlapping_intervals(a, b):
   - Finding the middle node of the linked list using fast/slow pointers.
   - Merging two lists together.
 
-##### Questions
+#### Practice Questions
 
 - [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
 - [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
@@ -343,7 +343,7 @@ copy = [[0 for _ in range(cols)] for _ in range(rows)]
 transposed_matrix = zip(*matrix)
 ```
 
-##### Questions
+#### Practice Questions
 
 - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
@@ -402,7 +402,7 @@ for c in set(word):
   - For substrings, you can terminate early once there is no match.
   - For subsequences, use dynamic programming as there are overlapping subproblems. Check out [this question](https://leetcode.com/problems/longest-palindromic-subsequence/).
 
-##### Questions
+#### Practice Questions
 
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
@@ -437,7 +437,7 @@ for c in set(word):
 - Be very familiar with the properties of a BST and validating that a binary tree is a BST. This comes up more often than expected.
 - When a question involves a BST, the interviewer is usually looking for a solution which runs faster than O(n).
 
-##### Questions
+#### Practice Questions
 
 - [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 - [Same Tree](https://leetcode.com/problems/same-tree/)
@@ -458,7 +458,7 @@ for c in set(word):
 - LeetCode has written a [very comprehensive article](https://leetcode.com/articles/implement-trie-prefix-tree/) on tries which I highly encourage you to read.
 - Be familiar with implementing a Trie class and its `add`, `remove` and `search` methods from scratch.
 
-##### Questions
+#### Practice Questions
 
 - [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)
 - [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design)
@@ -469,7 +469,7 @@ for c in set(word):
 - If you see a top/lowest K being mentioned in the question, it is usually a signal that a heap can be used to solve the problem.
 - If you require the top K elements use a Min Heap of size K. Iterate through each element, pushing it into the heap. Whenever the heap size exceeds K, remove the minimum element, that will guarantee that you have the K largest elements.
 
-##### Questions
+#### Practice Questions
 
 - [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 - [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
