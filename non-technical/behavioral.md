@@ -1,4 +1,4 @@
-Behavioural
+Behavioral
 ==
 
 Learn the [STAR](https://en.wikipedia.org/wiki/Situation,_task,_action,_result) format. From Wikipedia:
@@ -18,7 +18,7 @@ Learn the [STAR](https://en.wikipedia.org/wiki/Situation,_task,_action,_result) 
 
 ## Airbnb
 
-While loving to travel or appreciating our growth may be good answers, try to demonstrate the deep connection you have with the product.
+While loving to travel or appreciating Airbnb's growth may be good answers, try to demonstrate the deep connection you have with the product.
 
 - What does it mean to be you belong anywhere?
 - What large problems in the world would you solve today?

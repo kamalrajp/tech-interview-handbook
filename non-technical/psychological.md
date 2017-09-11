@@ -22,6 +22,6 @@ Here are some psychological tricks that will help you ace a job interview.
 - Showcase your potential.
   - You might be tempted to tell your interviewer all about your past accomplishments — but research suggests you should focus more on what you could do in the future, if the organization hires you.
 
-#### References
+###### References
 
 - [Business Insider](http://www.businessinsider.com/psychological-tricks-to-ace-job-interview-2015-11)

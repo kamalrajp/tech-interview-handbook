@@ -1,12 +1,12 @@
 # Interview Handbook
 
-Handbook to help you ace your next technical interview, with a focus on algorithms, design questions and the front end domain.
+Handbook to help you ace your next technical interview, with a focus on algorithms and the front end domain. System design questions are in-progress.
 
-This handbook is pretty new and help in contributing content would be very much appreciated!
+This handbook is pretty new and help from you in contributing content would be very much appreciated!
 
 ## Motivations
 
-While there are many awesome books like Cracking the Coding Interview and repositories on Github that contain a lot of algorithm questions, for more domain-specific and non-software engineering questions, there seems to be a lack in resources. This handbook aims to cover questions beyond the algorithm coding questions.
+While there are many awesome books like [Cracking the Coding Interview](http://www.crackingthecodinginterview.com/) and interview-related repositories on Github that contain a lot of algorithm questions, for more domain-specific and non-software engineering questions, there seems to be a lack in resources. This handbook aims to cover questions beyond the algorithm coding questions.
 
 ## Contents
 
@@ -19,8 +19,8 @@ While there are many awesome books like Cracking the Coding Interview and reposi
   - Summarized notes on the various aspects of front end.
   - [Front End Job Interview Questions and Answers](front-end/interview-questions.md) ⭐
 - **[Non-Technical Tips](non-technical)**
-  - Random non-technical tips that cover behavioural and psychological aspects, interview formats and "Do you have any questions for me?".
-  - [Behavioural Questions](non-technical/behavioural.md)
+  - Random non-technical tips that cover behavioral and psychological aspects, interview formats and "Do you have any questions for me?".
+  - [Behavioral Questions](non-technical/behavioral.md)
   - [Interview Formats](non-technical/format.md)
   - [Psychological Tricks](non-technical/psychological.md)
   - [Questions to Ask](non-technical/questions-to-ask.md)

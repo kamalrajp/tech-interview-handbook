@@ -1,7 +1,7 @@
 Negotiation
 ==
 
-## Ten Rules of Negotiation
+### Ten Rules of Negotiation
 
 Key points extracted from "Ten Rules for Negotiating a Job Offer" [Part 1](http://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/) and [Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/) by Haseeb Qureshi.
 
