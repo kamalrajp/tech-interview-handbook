@@ -156,8 +156,11 @@ The next section dives deep into practical tips for specific topics of algorithm
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+- [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [3Sum](https://leetcode.com/problems/3sum/)
+- [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
 ## Binary
 
@@ -251,6 +254,7 @@ def traverse(matrix):
 - [Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
 - [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
 ## Interval
 
@@ -316,11 +320,18 @@ def merge_overlapping_intervals(a, b):
 - When a question involves "a multiple of a number", perhaps modulo might be useful.
 - Check for and handle overflow/underflow if you are using a typed language like Java and C++. At the very least, mention that overflow/underflow is possible and ask whether you need to handle it.
 - Consider negative numbers and floating point numbers. This may sound obvious, but under interview pressure, many obvious cases go unnoticed.
-- Sum of 1 to N = (n+1) * n/2
-- Sum of GP = 2<sup>0</sup> + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... 2<sup>n</sup> = 2<sup>n+1</sup> - 1
-- Permutations of N = N! / (N-K)!
-- Combinations of N = N! / (K! * (N-K)!)
-- Be familiar with how to generate all permutations of a sequence as well as how to handle duplicates.
+- If the question asks to implement an operator such as power, squareroot or division and want it to be faster than O(n), binary search is usually the approach to go.
+- Some common formulas:
+  - Sum of 1 to N = (n+1) * n/2
+  - Sum of GP = 2<sup>0</sup> + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... 2<sup>n</sup> = 2<sup>n+1</sup> - 1
+  - Permutations of N = N! / (N-K)!
+  - Combinations of N = N! / (K! * (N-K)!)
+
+#### Practice Questions
+
+- [Pow(x, n)](https://leetcode.com/problems/powx-n/)
+- [Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+- [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
 
 ## Matrix
 
@@ -353,10 +364,16 @@ transposed_matrix = zip(*matrix)
 ## Recursion
 
 - Remember to always define a base case so that your recursion will end.
-- Useful for permutation and tree-based questions.
+- Useful for permutation, generating all combinations and tree-based questions.
+- Be familiar with how to generate all permutations of a sequence as well as how to handle duplicates.
 - Recursion implicitly uses a stack. Hence all recursive approaches can be rewritten iteratively using a stack.
 - Beware of cases where the recursion level goes too deep and causes a stack overflow (in Python the default limit is 1000).
 - Recursion will never be O(1) space complexity because a stack is involved. [Tail-call optimization](https://stackoverflow.com/questions/310974/what-is-tail-call-optimization) can be used to save on the space needed, so do find out if your chosen language supports tail-call optimization.
+
+#### Practice Questions
+
+- [Subsets](https://leetcode.com/problems/subsets/) and [Subsets II](https://leetcode.com/problems/subsets-ii/)
+- [Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)
 
 ## String
 
@@ -410,7 +427,7 @@ for c in set(word):
 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
-- http://www.geeksforgeeks.org/string-data-structure/
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
 
 ## Tree
 
@@ -455,8 +472,8 @@ for c in set(word):
 
 - Tries are special trees (prefix trees) that make searching and storing strings more efficient. Tries have many practical applications such as for searching and autocomplete. It will be helpful to know these common applications so that you can easily identify when a problem can be solved efficiently using a trie.
 - Sometimes preprocessing a dictionary of words (given in a list) into a trie will improve the efficiency when searching for a word of length k among n words. Searching becomes O(k) instead of O(n).
-- LeetCode has written a [very comprehensive article](https://leetcode.com/articles/implement-trie-prefix-tree/) on tries which I highly encourage you to read.
-- Be familiar with implementing a Trie class and its `add`, `remove` and `search` methods from scratch.
+- LeetCode has written a [very comprehensive article](https://leetcode.com/articles/implement-trie-prefix-tree/) on tries which you are highly encouraged to read.
+- Be familiar with implementing a `Trie` class and its `add`, `remove` and `search` methods from scratch.
 
 #### Practice Questions
 
