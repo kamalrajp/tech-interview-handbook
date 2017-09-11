@@ -1,10 +1,9 @@
-# Various ways of traversing a tree using iteration.
+# Various iterative ways of traversing a tree.
 def inorder_traversal(root):
     """
     :type root: TreeNode
     :rtype: List[int]
     """
-    # iterative
     if not root:
       return []
     result = []

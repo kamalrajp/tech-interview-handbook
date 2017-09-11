@@ -26,28 +26,28 @@ discover corner cases you might have missed out or even lead you towards the opt
 
 ## Picking a Programming Language
 
-Before anything else, you need to pick a programming language to do your interviews in. Most companies will let you code in any language you want, the only exception I know being Google, where they only allow you to pick from Java, C++ or Python for their algorithmic coding interviews. Most of the time, I would recommend that you use a language that you are extremely familiar with, rather than picking up a new language just for doing interviews because the company uses that language heavily.
+Before anything else, you need to pick a programming language to do your interviews in. Most companies will let you code in any language you want, the only exception I know being Google, where they only allow candidates to pick from Java, C++ or Python for their algorithmic coding interviews. Most of the time, I would recommend that you use a language that you are extremely familiar with rather than picking up a new language just for doing interviews because the company uses that language heavily.
 
-There are some languages which are more suitable than others for coding interviews and some languages you want to absolutely avoid. From my experience interviewing as an interviewer, most candidates pick Python or Java. Other commonly seen languages include JavaScript, Ruby and C++. I would absolutely avoid lower level languages like C or Go, simply because they lack in many standard library functions and available data structures.
+There are some languages which are more suitable than others for coding interviews and some languages you absolutely want to avoid. From my experience interviewing as an interviewer, most candidates pick Python or Java. Other commonly seen languages include JavaScript, Ruby and C++. I would absolutely avoid lower level languages like C or Go, simply because they lack in many standard library functions and data structures.
 
-Personally, Python is my de facto choice for coding algorithm during interviews because it is succinct and has a pretty huge library of functions and data structures available. One of my top reasons for recommending Python is that it uses consistent APIs that operate on different data structures, such as `len()`, `for ... in ...` and slicing notation on sequences (strings/lists/tuples). Getting the last element in a sequence is `arr[-1]` and reversing it is simply `arr[::-1]`. You can achieve a lot with minimal syntax in Python.
+Personally, Python is my de facto choice for coding algorithms during interviews because it is succinct and has a pretty huge library of functions and data structures available. One of my top reasons for recommending Python is that it uses consistent APIs that operate on different data structures, such as `len()`, `for ... in ...` and slicing notation on sequences (strings/lists/tuples). Getting the last element in a sequence is `arr[-1]` and reversing it is simply `arr[::-1]`. You can achieve a lot with minimal syntax in Python.
 
-Java is a decent choice too but having to constantly declare types in your code means extra keystrokes which results in slower coding/typing speed. The reasons for choosing/not choosing C++ are similar to Java. Ultimately, Python, Java and C++ are decent choices of languages. If you have been using Java at work for awhile now and do not have time to be comfortably familiar with another language, I would recommend just sticking to Java instead of picking up Python from scratch just for interviews to avoid having to context switch between languages during work vs interviews.
+Java is a decent choice too but having to constantly declare types in your code means extra keystrokes which results in slower coding/typing speed. This issue will be more apparent when you have to write on a whiteboard during on-site interviews. The reasons for choosing/not choosing C++ are similar to Java. Ultimately, Python, Java and C++ are decent choices of languages. If you have been using Java at work for a while now and do not have time to be comfortably familiar with another language, I would recommend just sticking to Java instead of picking up Python from scratch just for interviews to avoid having to context switch between languages during work vs interviews. Most of the time, the bottleneck is in the thinking and not the writing.
 
-One exception to the convention of allowing you to "pick any programming language you want" is when you are interviewing for a domain-specific position, such as Front End/iOS/Android Engineer roles, in which you would need to be familiar with coding algorithms in JavaScript, Objective-C/Swift and Java respectively. If you need to use a data structure that the language does not support, such as a Queue or Heap in JavaScript, perhaps try asking the interviewer whether you can assume that you have a data structure that implements certain methods with specified time complexities. If the implementation of that data structure is not crucial to solving the problem, the interviewer will usually allow it. In reality, choosing the right data structures to tackle the right problem is more important than knowing the intricate implementation details.
+One exception to the convention of allowing you to "pick any programming language you want" is when you are interviewing for a domain-specific position, such as Front End/iOS/Android Engineer roles, in which you would need to be familiar with coding algorithms in JavaScript, Objective-C/Swift and Java respectively. If you need to use a data structure that the language does not support, such as a Queue or Heap in JavaScript, perhaps try asking the interviewer whether you can assume that you have a data structure that implements certain methods with specified time complexities. If the implementation of that data structure is not crucial to solving the problem, the interviewer will usually allow it. In reality, being aware of existing data structures and selecting the appropriate ones to tackle the problem at hand is more important than knowing the intricate implementation details.
 
 Next, gain familiarity and mastery of your chosen programming language:
 
-1. Practice coding algorithms using your chosen language. There are various Online Judges such as [LeetCode](https://leetcode.com/), [HackerRank](https://www.hackerrank.com/) and [CodeForces](http://codeforces.com/) for you to practice questions and get used to the language. From experience, LeetCode questions are the most similar to what is being asked in interviews, where as HackerRank and CodeForces questions are more similar to competitive programming questions.
-2. Find out the time and space complexities of the common operations in your chosen language. For Python, this [page](https://wiki.python.org/moin/TimeComplexity) will come in handy. Also find out the underlying sorting algorithm that is being used in the language's `sort()` function. After completing a question on LeetCode, I usually add the time and space complexities of the written code as comments above the function as practice for analyzing the algorithm.
-3. Find out the recommended coding style for your language and stick to it.
-4. Find out and be familiar with the common pitfalls and caveats of the language. If you point out them out during the interview and intelligently avoid falling into it, you will usually impress the interviewer and that results in bonus points in your feedback, regardless of whether the interviewer is familiar with the language or not.
+1. Practice coding algorithms using your chosen language. There are various Online Judges such as [LeetCode](https://leetcode.com/), [HackerRank](https://www.hackerrank.com/) and [CodeForces](http://codeforces.com/) for you to practice questions and get used to the language. From experience, LeetCode questions are the most similar to the kind of questions being asked in interviews whereas HackerRank and CodeForces questions are more similar to competitive programming questions.
+2. Learn and understand the time and space complexities of the common operations in your chosen language. For Python, this [page](https://wiki.python.org/moin/TimeComplexity) will come in handy. Also find out the underlying sorting algorithm that is being used in the language's `sort()` function and its time and space complexity (in Python its Timsort which is a hybrid sort). After completing a question on LeetCode, I usually add the time and space complexities of the written code as comments above the function body to remind myself to analyze the algorithm after I am done with the implementation.
+3. Read up on the recommended coding style for your language and stick to it.
+4. Find out and be familiar with the common pitfalls and caveats of the language. If you point out them out during the interview and intelligently avoid falling into them, you will usually impress the interviewer and that results in bonus points in your feedback, regardless of whether the interviewer is familiar with the language or not.
 
 Practice, practice and more practice!
 
 ## Algorithmic Coding Interview
 
-Your interviewer is looking out for signals that you fit the requirements of the role and it is up to you to display those signals to them. Initially it may feel weird to be talking when you are coding, as most people do not have the habit of explaining out loud as they are typing code. However, it is hard for the interviewer to know what you are thinking just by looking at the code that you type. If you communicated your approach to the interviewer before you start coding, you can validate your approach with him and both of you can agree upon an approach that he can accept.
+Your interviewer is looking out for signals that you fit the requirements of the role and it is up to you to display those signals to them. Initially it may feel weird to be talking while you are coding as most programmers do not have the habit of explaining out loud as they are typing code. However, it is hard for the interviewer to know what you are thinking just by looking at the code that you type. If you communicate your approach to the interviewer before you start coding, you can validate your approach with him and the both of you can agree upon an acceptable approach.
 
 **Before the Interview**
 
@@ -59,36 +59,36 @@ Use earphones and make sure you are in a quiet environment. You definitely do no
 
 Many candidates jump into coding the moment they hear the question. That is usually a big mistake. Take a moment to repeat the question back at the interviewer and make sure that you understand exactly what he is asking. If you misunderstood and when you repeat back the question, he'll clarify.
 
-Always clarify about the question upon hearing it, even if it you think it is clear to you. You might discover something that you might have missed out and it also sends a signal to the interviewer that you are a careful person who pays attention to details. Consider asking the following questions:
+Always seek clarification about the question upon hearing it even if it you think it is clear to you. You might discover something that you have missed out and it also sends a signal to the interviewer that you are a careful person who pays attention to details. Consider asking the following questions:
 
 - How big is the size of the input?
 - How big is the range of values?
-- What kind of values are there? Are there negative numbers? Floating points?
+- What kind of values are there? Are there negative numbers? Floating points? Will there be empty inputs?
 - Are there duplicates within the input?
 - What are some extreme cases of the input?
 - How is the input stored? If you are given a dictionary of words, is it a list of strings or a Trie?
 
-After you have sufficiently clarified the scope and intention of the problem, explain your high level approach to the interviewer. If you are stuck, consider various approaches and explain out loud why it will/will not work. Sometimes your interviewer might drop hints and lead you to the right path.
+After you have sufficiently clarified the scope and intention of the problem, explain your high level approach to the interviewer. If you are stuck, consider various approaches and explain out loud why it will/will not work. Sometimes your interviewer might drop hints and lead you towards the right path.
 
-Start with a brute force approach, communicate it to the interviewer, explain the time and space complexity and why it is bad. It is unlikely that the brute force approach will be one that you will be coding. At this point, the interviewer will usually pop the "Can we do better?" question, meaning that he is looking for a more optimal approach. Personally, this is usually the hardest part of the interview. In general, look for repeated work and try to optimize them by potentially caching the calculated result somewhere and reference it later, rather than having to compute it all over again. There are some tips on tackling topic-specific questions that I dive into details below.
+Start with a brute force approach, communicate it to the interviewer, explain the time and space complexity and why it is bad. It is unlikely that the brute force approach will be one that you will be coding. At this point, the interviewer will usually pop the "Can we do better?" question, meaning that he is looking for a more optimal approach. In my opinion, this is usually the hardest part of the interview. In general, look for repeated work and try to optimize them by potentially caching the calculated result somewhere and reference it later, rather than having to compute it all over again. There are some tips on tackling topic-specific questions that I dive into details below.
 
 Only start coding after you and your interviewer have agreed on an approach, and has given you the green light.
 
 **Starting to Code**
 
-Write your code with good coding style. Reading code written by others is usually not an enjoyable task. Reading horribly formatted code by others makes it worse. Your goal is to make your interviewer understand the code you have written so that he can quickly evaluate if your code does what you say it does and whether it solves the given problem. If you have chose Python, refer to the [PEP 8 Style Guide](https://pep8.org/), or if you have chosen Java, refer to [Google's Java Style Guide](https://google.github.io/styleguide/javaguide.html). Use clear variable names, avoid single letter names unless they are for iteration.
+Write your code with good coding style. Reading code written by others is usually not an enjoyable task. Reading horribly-formatted code by others makes it worse. Your goal is to make your interviewer understand the code you have written so that he can quickly evaluate if your code does what you say it does and whether it solves the given problem. If you have chose Python, refer to the [PEP 8 Style Guide](https://pep8.org/). If you have chosen Java, refer to [Google's Java Style Guide](https://google.github.io/styleguide/javaguide.html). Use clear variable names, avoid single letter names unless they are for iteration. However, if you are coding on a whiteboard, you might not want to use extremely verbose variable names for the sake of reducing the amount you have to write.
 
 Always be explaining what you are currently writing/typing to the interviewer. This is not about literally reading out what you are typing to the interviewer. Talk about the section of the code you are currently implementing at a higher level, explain why it is written as such and what it is trying to achieve.
 
-When you copy and paste code, consider whether it is necessary. Sometimes it is, sometimes it is not. If you find yourself copying and pasting one whole chunk of code, it is probably an indicator that you can refactor by containing those lines into a function. If it is just a single line you copied, usually it is fine. Do remember to change the respective variables in your copied line of code where relevant. Copy-paste errors are a common source of bugs even in day-to-day coding!
+When you copy and paste code, consider whether it is necessary. Sometimes it is, sometimes it is not. If you find yourself copying and pasting one large chunk of code spanning multiple lines, it is probably an indicator that you can refactor by containing those lines into a function. If it is just a single line you copied, usually it is fine. Do remember to change the respective variables in your copied line of code where relevant. Copy-paste errors are a common source of bugs even in day-to-day coding!
 
 **After Coding**
 
 After you have finished coding, do not immediately announce to the interviewer that you are done. In most cases, your code is usually not perfect and contains some bugs or syntax errors. What you need to do now is to review your code.
 
-Firstly, come up with small test cases and step through the code (not your algorithm!) with those sample input. Interviewers like it when you read their mind, and what they usually do after you have finished coding would be to get you to write tests. It is a huge plus if you write tests for your code even without prompts from them. You should be emulating a debugger when stepping through and jot down the values of certain variables as you step through them or say them out.
+Firstly, come up with small test cases and step through the code (not your algorithm!) with those sample input. Interviewers like it when you read their mind and what they usually do after you have finished coding would be to get you to write tests. It is a huge plus if you write tests for your code even before prompts from them. You should be emulating a debugger when stepping through and jot down the values of certain variables as you step through them or say them out.
 
-If there are huge duplicated chunks of code in your solution, it would be a good chance to refactor it and demonstrate to the interviewer that you are one who values code quality. Look out for places where you can short-circuit the logic.
+If there are huge duplicated chunks of code in your solution, it would be a good chance to refactor it and demonstrate to the interviewer that you are one who values code quality. Also look out for places where you can do [short-circuit evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation).
 
 Lastly, give the time/space complexity of your code and explain why it is such. You can even annotate certain chunks of your code with the various time/space complexities to demonstrate your understanding of your code and the APIs of your chosen programming language. Explain any trade-offs made in the code possibly in terms of time/space.
 
@@ -96,13 +96,13 @@ If your interviewer is happy with the solution, the interview usually ends here.
 
 ## Mock Interviews
 
-Interviewing is a skill that you can get better at. The steps mentioned above can be rehearsed over and over again until you have fully internalized them and following those steps become second nature to you. To get more practice for interviews, I would recommend finding a friend to partner with and you two can practice interviewing each other.
+Interviewing is a skill that you can get better at. The steps mentioned above can be rehearsed over and over again until you have fully internalized them and following those steps become second nature to you. To get more practice for interviews, I would recommend finding a friend to partner with and the both of you can practice interviewing each other.
 
-A great resource for practicing mock interviews would be [interviewing.io](https://interviewing.io/). interiewing.io is a platform that matches interviewees with interviewers from top companies and provides an environment for interviews to be conducted anonymously. At the end of the interview, both interviewer and interviewees can provide feedback to each other for the purpose of improvement. Doing well in your mock interviews will unlock the jobs page and allow you to book interviews (also anonymously) with top companies like Uber, Lyft, Quora, Asana and more.
+A great resource for practicing mock coding interviews would be [interviewing.io](https://interviewing.io/). interiewing.io is a platform that matches interviewees with interviewers from top companies and provides an environment for interviews to be conducted anonymously. At the end of the interview, both interviewer and interviewees can provide feedback to each other for the purpose of improvement. Doing well in your mock interviews will unlock the jobs page and allow candidates to book interviews (also anonymously) with top companies like Uber, Lyft, Quora, Asana and more.
 
-I have used interviewing.io both as an interviewer and an interviewee and found the user experience to be really great! [Aline Lerner](https://twitter.com/alinelernerLLC), the CEO and co-founder of interviewing.io is passionate about revolutionizing the technical interview process and helping candidates to improve their skills at interviewing. She has also published a number of technical interview-related articles on the [interviewing.io blog](http://blog.interviewing.io/). interviewing.io is still in beta now but I recommend signing up early to increase the likelihood of getting an invite as soon as possible.
+I have used interviewing.io both as an interviewer and an interviewee and found the user experience to be really great! [Aline Lerner](https://twitter.com/alinelernerLLC), the CEO and co-founder of interviewing.io and her team her passionate about revolutionizing the technical interview process and helping candidates to improve their skills at interviewing. She has also published a number of technical interview-related articles on the [interviewing.io blog](http://blog.interviewing.io/). interviewing.io is still in beta now but I recommend signing up early to increase the likelihood of getting an invite as soon as possible.
 
-Another platform that allows you to practice coding interviews is [Pramp](https://pramp.com/). Where interviewing.io matches potential job seekers with seasoned technical interviewers, Pramp differs takes a different approach. Pramp pairs you up with another peer who is also a job seeker and both of you take turns to play the role of interviewer and interviewee. Pramp also prepares questions for you, along with suggested solutions and hints. Personally, I do not really like Pramp's approach because if I were to interview someone, I would rather choose a question I am familiar with. Also, many users of the platform do not have the experience of being interviewers and that can result in a horrible interview experience. There was once where my matched peer, as the interviewer, did not have the right understanding of the question and attempted to lead me down the wrong path of solving the question.
+Another platform that allows you to practice coding interviews is [Pramp](https://pramp.com/). Where interviewing.io matches potential job seekers with seasoned technical interviewers, Pramp differs takes a different approach. Pramp pairs you up with another peer who is also a job seeker and both of you take turns to assume the role of interviewer and interviewee. Pramp also prepares questions for you, along with suggested solutions and prompts to guide the interviewee. Personally, I do not really like Pramp's approach because if I were to interview someone, I would rather choose a question I am familiar with. Also, many users of the platform do not have the experience of being interviewers and that can result in a horrible interview experience. There was once where my matched peer, as the interviewer, did not have the right understanding of the question and attempted to lead me down the wrong path of solving the question.
 
 The next section dives deep into practical tips for specific topics of algorithms and data structures which appear frequently in coding questions. Many algorithm questions involve techniques that can be applied to questions of similar nature. The more techniques you have in your arsenal, the higher the chances of succeeding in your interview.
 
@@ -110,7 +110,7 @@ The next section dives deep into practical tips for specific topics of algorithm
 
 - Input validation:
   - Always validate input first. Check for invalid/empty/negative/different type input. Never assume you are given the valid parameters. Alternatively, clarify with the interviewer whether you can assume valid input (usually yes), which can save you time from writing code that does input validation.
-- Can the input be preprocessed to reduce lookup time?
+- Is the function meant to be run multiple times? Can/should the input be preprocessed to reduce lookup time?
 - Are there any time/space complexity requirements/constraints?
 - Check corner cases:
   - Check for off-by-1 errors.
@@ -123,7 +123,7 @@ The next section dives deep into practical tips for specific topics of algorithm
   - However, functional programming is usually expensive in terms of space complexity because of non-mutation and the repeated allocation of new objects. On the other hand, imperative code is faster you operate on existing objects. Hence you will need to achieve a balance between accuracy vs efficiency, by using the right amount of functional and imperative code.
   - Avoid relying on and mutating global variables.
   - If you have to rely on global variables, make sure that you do not mutate it by accident.
-- Generally, to improve the speed, we can either choose a better data structure/algorithm or use more memory.
+- Generally, to improve the speed, we can either choose a more appropriate data structure/algorithm or use more memory.
 - Data structures are your weapons. Choosing the right weapon for the right battle is the key to victory. You wouldn't want to bring a sniper rifle into a fist fight or a baseball bat into an infiltration mission. You need to be aware about the strengths of each data structure and the time complexities for its various operations like the back of your hand.
 - Hashes/maps are probably the most commonly used data structure for algorithm questions. If you're really stuck on a question, your last resort can be to enumerate through the possible data structures (thankfully there aren't that many of them) and consider whether each of them can be applied to the problem. This has worked for me sometimes.
 
@@ -133,19 +133,20 @@ The next section dives deep into practical tips for specific topics of algorithm
 - Corner cases:
   - Empty sequence.
   - Sequence with 1 or 2 elements.
+  - Sequence with all duplicate elements.
 - Are there duplicate values in the sequence, would it affect the answer?
 - Check for sequence out of bounds.
 - Be mindful about slicing or concatenating sequences in your code. Typically, slicing and concatenating sequences require O(n) time. Use start and end indices to demarcate a subarray/substring where possible.
 - Sometimes you can traverse the sequence from the right rather than from the left.
 - Master the [sliding window technique](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems) that applies to many substring/subarray problems.
+- When you are given two sequences to process, having two indices to traverse/compare the two sequences is quite common. For example, we use the same approach to merge two sorted arrays.
 
 ## Array
 
 - Is the array sorted or partially sorted? If it is, some form of binary search should be possible.
-- Having two indices to traverse/compare two strings/arrays is quite common. For example, we use the same approach to merging two sorted arrays.
-- Can you sort the array? Sometimes sorting the array first may significantly simplify the problem. Be sure that the order of elements do not matter or else sorting will mess up the order.
+- Can you sort the array? Sometimes sorting the array first may significantly simplify the problem. Make sure that the order of array elements do not need to be preserved before attempting a sort.
 - For questions where summation or multiplication of a subarray is involved, pre-computation using hashing or a prefix/suffix sum/product might be useful.
-- If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 0 to N - 1, where N is the length of the array, negate the value at that index to indicate presence of that number.
+- If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number.
 
 #### Questions
 
@@ -159,7 +160,7 @@ The next section dives deep into practical tips for specific topics of algorithm
 
 ## Binary
 
-- Questions involving binary representations and bitwise operations are asked sometimes, and you must be absolutely be familiar with how to convert a number from decimal form into binary form in your programming language of choice.
+- Questions involving binary representations and bitwise operations are asked sometimes and you must be absolutely familiar with how to convert a number from decimal form into binary form (and vice versa) in your programming language of choice.
 - Test k<sup>th</sup> bit is set: `num & (1 << k) != 0`.
 - Set k<sup>th</sup> bit: `num |= (1 << k)`.
 - Turn off k<sup>th</sup> bit: `num &= ~(1 << k)`.
@@ -177,8 +178,9 @@ The next section dives deep into practical tips for specific topics of algorithm
 ## Dynamic Programming
 
 - Usually used to solve optimization problems.
+- Alaina Kafkes has written an [awesome post](https://medium.freecodecamp.org/demystifying-dynamic-programming-3efafb8d4296) on tackling DP problems.
+- The only way to get better at DP is to practice. It takes some amount of practice to be able to recognize that a problem can be solved by DP.
 - Sometimes you do not need to store the whole DP table in memory, the last two values or the last two rows of the matrix will suffice.
-- TODO
 
 ##### Questions
 
@@ -211,30 +213,32 @@ The next section dives deep into practical tips for specific topics of algorithm
   - Adjacency matrix.
   - Adjacency list.
   - Hashmap of hashmaps.
-- Some questions look like they are trees but they are actually graphs. In that case you will have to handle cycles and keep a set of visited nodes.
+- Some questions look like they are trees but they are actually graphs. In that case you will have to handle cycles and keep a set of visited nodes when traversing.
 - Graph search algorithms:
   - **Common** - Breadth-first Search, Depth-first Search
   - **Uncommon** - Topological Sort, Dijkstra's algorithm
   - **Rare** - Bellman-Ford algorithm, Floyd-Warshall algorithm, Prim's algorithm, Kruskal's algorithm
-- In coding interviews, graphs are commonly represented as 2-D matrices where cells are the nodes and each cell can traverse to its adjacent cells (up/down/left/right), hence it is important that you be familiar with traversing a 2-D matrix. When recursively traversing the matrix, always ensure that your next position is within the boundary of the matrix. More tips for doing depth-first searches on a matrix can be found [here](https://discuss.leetcode.com/topic/66065/python-dfs-bests-85-tips-for-all-dfs-in-matrix-question/). A simple template for doing depth-first searches on a matrix goes like this:
+- In coding interviews, graphs are commonly represented as 2-D matrices where cells are the nodes and each cell can traverse to its adjacent cells (up/down/left/right). Hence it is important that you be familiar with traversing a 2-D matrix. When recursively traversing the matrix, always ensure that your next position is within the boundary of the matrix. More tips for doing depth-first searches on a matrix can be found [here](https://discuss.leetcode.com/topic/66065/python-dfs-bests-85-tips-for-all-dfs-in-matrix-question/). A simple template for doing depth-first searches on a matrix goes like this:
 
 ```py
-rows, cols = len(matrix), len(matrix[0])
-visited = set()
-directions = ((0, 1), (0, -1), (1, 0), (-1, 0))
-def dfs(i, j):
-  if (i, j) in visited:
-    return
-  visited.add((i, j))
-  for direction in directions:
-    next_i, next_j = i + direction[0], j + direction[1]
-    if 0 <= next_i < rows and 0 <= next_j < cols: # Check boundary
-      # Add any other checking here ^
-      dfs(next_i, next_j)
+def traverse(matrix):
+  rows, cols = len(matrix), len(matrix[0])
+  visited = set()
+  directions = ((0, 1), (0, -1), (1, 0), (-1, 0))
+  def dfs(i, j):
+    if (i, j) in visited:
+      return
+    visited.add((i, j))
+    # Traverse neighbors
+    for direction in directions:
+      next_i, next_j = i + direction[0], j + direction[1]
+      if 0 <= next_i < rows and 0 <= next_j < cols: # Check boundary
+        # Add any other checking here ^
+        dfs(next_i, next_j)
 
-for i, row in enumerate(matrix):
-  for j, col in enumerate(row):
-    dfs(i, j)
+  for i in range(rows):
+    for j in range(cols):
+      dfs(i, j)
 ```
 
 ##### Questions
@@ -249,8 +253,25 @@ for i, row in enumerate(matrix):
 
 ## Interval
 
-- Interval questions are questions where you are given an array of two-element arrays, where the two values in the array represent a start and end value. They are considered part of the array questions family but they involve some common techniques so they are in this special section on their own.
-- TODO
+- Interval questions are questions where you are given an array of two-element arrays (an interval) and the two values represent a start and an end value. Interval questions are considered part of the array family but they involve some common techniques hence they are extracted out to this special section of their own.
+- An example interval array: `[[1, 2], [4, 7]]`.
+- Interval questions can be tricky to those who have not tried them before because of the sheer number of cases to consider when they overlap.
+- Corner cases:
+  - Single interval.
+  - Non-overlapping intervals.
+  - An interval totally consumed within another interval.
+  - Duplicate intervals.
+- Do clarify with the interviewer whether `[1, 2]` and `[2, 3]` are considered overlapping intervals as it affects how you will write your equality checks.
+- A common routine for interval questions is to sort the array of intervals by each intervarl's starting value.
+- Be familiar with writing code to check if two intervals overlap and merging two overlapping intervals:
+
+```py
+def is_overlap(intvl1, intvl2):
+  return intvl2[0] < intvl1[1] < intvl2[1] or intvl1[0] < intvl2[1] < intvl1[1]
+
+def merge_overlapping_intervals(intvl1, intvl2):
+  return [min(intvl1[0], intvl2[0]), max(intvl1[1], intvl2[1])]
+```
 
 ##### Questions
 
@@ -332,17 +353,13 @@ transposed_matrix = zip(*matrix)
 
 - Always define a base case so that your recursion will end.
 - Useful for permutation and tree-based questions.
-- Recursion implicitly use a stack. Hence all recursive approaches can be rewritten iteratively using a stack.
+- Recursion implicitly uses a stack. Hence all recursive approaches can be rewritten iteratively using a stack.
 - Beware of cases where the recursion level goes too deep and causes a stack overflow (in Python the default limit is 1000).
 - Recursion will never be O(1) space complexity because a stack is involved. [Tail-call optimization](https://stackoverflow.com/questions/310974/what-is-tail-call-optimization) can be used to save on the space needed, so do find out if your chosen language supports tail-call optimization.
 
-## Searching and Sorting
-
-- TODO
-
 ## String
 
-- Please read the above tips on Sequences because they apply to strings too.
+- Please read the above tips on [Sequences](#sequences) because they apply to strings too.
 - Corner cases:
   - Strings with only one distinct character.
 - Ask about input character set and case sensitivity. Usually the characters are limited to lower case Latin characters, i.e. a-z.
@@ -383,14 +400,6 @@ for c in set(word):
 - When a question is about counting the number of palindromes, a common trick is to have two pointer that move outwards, away from the middle. Note that palindromes can be even/odd length, and that for each middle pivot character, you would need to check twice, once including the character, and once without.
   - For substrings, you can terminate early once there is no match.
   - For subsequences, use dynamic programming as there are overlapping subproblems. Check out [here](https://leetcode.com/problems/longest-palindromic-subsequence/).
-
-#### Dictionary (List of words)
-
-- Preprocess into a trie.
-- Two typical ways:
-  - Traverse through the whole dictionary.
-  - Traverse through the word.
-- Having two indices to traverse/compare two string/arrays is quite common. For example, we use the same approach to merging two sorted arrays.
 
 ##### Questions
 
@@ -441,21 +450,21 @@ for c in set(word):
 
 ## Trie
 
-- TODO
-- https://leetcode.com/articles/implement-trie-prefix-tree/
+- Tries are special trees (prefix trees) that make searching and storing strings more efficient. Tries have many practical applications such as for searching and autocomplete. It will be helpful to know these common applications so that you can easily identify when a problem can be solved efficiently using a trie.
+- Sometimes preprocessing a dictionary of words (given in a list) into a trie will improve the efficiency when searching for a word of length k among n words. Searching becomes O(k) instead of O(n).
+- LeetCode has written a [very comprehensive article](https://leetcode.com/articles/implement-trie-prefix-tree/) on tries which I highly encourage you to read.
+- Be familiar with implementing a Trie class and its `add`, `remove` and `search` methods from scratch.
 
 ##### Questions
 
 - [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)
-- [Word Search II](https://leetcode.com/problems/word-search-ii/)
 - [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design)
+- [Word Search II](https://leetcode.com/problems/word-search-ii/)
 
 ## Heap
 
-- A Heap is a specialized tree based structure data structure that satisfies the heap property: if A is a parent node of B, then the key (the value) of node A is ordered with respect to the key of node B with the same ordering applying across the entire heap.
-- A heap can be classified further as either a max heap or a min heap.
-- In a max heap, the keys of parent nodes are always greater than or equal to those of the children and the highest key is in the root node.
-- In a min heap, the keys of parent nodes are less than or equal to those of the children and the lowest key is in the root node.
+- If you see a top/lowest K being mentioned in the question, it is usually a signal that a heap can be used to solve the problem.
+- If you require the top K elements use a Min Heap of size K. Iterate through each element, pushing it into the heap. Whenever the heap size exceeds K, remove the minimum element, that will guarantee that you have the K largest elements.
 
 ##### Questions
 
