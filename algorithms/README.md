@@ -104,46 +104,47 @@ I have used interviewing.io both as an interviewer and an interviewee and found 
 
 Another platform that allows you to practice coding interviews is [Pramp](https://pramp.com/). Where interviewing.io matches potential job seekers with seasoned technical interviewers, Pramp differs takes a different approach. Pramp pairs you up with another peer who is also a job seeker and both of you take turns to assume the role of interviewer and interviewee. Pramp also prepares questions for you, along with suggested solutions and prompts to guide the interviewee. Personally, I do not really like Pramp's approach because if I were to interview someone, I would rather choose a question I am familiar with. Also, many users of the platform do not have the experience of being interviewers and that can result in a horrible interview experience. There was once where my matched peer, as the interviewer, did not have the right understanding of the question and attempted to lead me down the wrong path of solving the question.
 
-The next section dives deep into practical tips for specific topics of algorithms and data structures which appear frequently in coding questions. Many algorithm questions involve techniques that can be applied to questions of similar nature. The more techniques you have in your arsenal, the higher the chances of succeeding in your interview.
+The next section dives deep into practical tips for specific topics of algorithms and data structures which appear frequently in coding questions. Many algorithm questions involve techniques that can be applied to questions of similar nature. The more techniques you have in your arsenal, the higher the chances of passing the interview.
 
 ## General Tips
 
 - Input validation:
   - Always validate input first. Check for invalid/empty/negative/different type input. Never assume you are given the valid parameters. Alternatively, clarify with the interviewer whether you can assume valid input (usually yes), which can save you time from writing code that does input validation.
-- Is the function meant to be run multiple times? Can/should the input be preprocessed to reduce lookup time?
 - Are there any time/space complexity requirements/constraints?
 - Check corner cases:
   - Check for off-by-1 errors.
   - In languages where there are no automatic type coercion, check that concatenation of values are of the same type: `int`/`str`/`list`.
   - After finishing your code, use a few example inputs to test your solution.
+- Is the algorithm meant to be run multiple times, for example in a web server? If yes, the input is likely to be preprocess-able to improve the efficiency in each call.
 - Use a mix of functional and imperative programming paradigms:
   - Write pure functions as much as possible.
-  - Pure functions are easy to reason about and can help to reduce bugs in your implementation.
-  - Avoid mutating the parameters passed into your function, especially if they are passed by reference, unless you know what you are doing.
-  - However, functional programming is usually expensive in terms of space complexity because of non-mutation and the repeated allocation of new objects. On the other hand, imperative code is faster you operate on existing objects. Hence you will need to achieve a balance between accuracy vs efficiency, by using the right amount of functional and imperative code.
-  - Avoid relying on and mutating global variables.
+  - Pure functions are easier to reason about and can help to reduce bugs in your implementation.
+  - Avoid mutating the parameters passed into your function especially if they are passed by reference unless you are sure of what you are doing.
+  - However, functional programming is usually expensive in terms of space complexity because of non-mutation and the repeated allocation of new objects. On the other hand, imperative code is faster because you operate on existing objects. Hence you will need to achieve a balance between accuracy vs efficiency, by using the right amount of functional and imperative code where appropriate.
+  - Avoid relying on and mutating global variables. Global variables introduce state.
   - If you have to rely on global variables, make sure that you do not mutate it by accident.
-- Generally, to improve the speed, we can either choose a more appropriate data structure/algorithm or use more memory.
-- Data structures are your weapons. Choosing the right weapon for the right battle is the key to victory. You wouldn't want to bring a sniper rifle into a fist fight or a baseball bat into an infiltration mission. You need to be aware about the strengths of each data structure and the time complexities for its various operations like the back of your hand.
-- Hashes/maps are probably the most commonly used data structure for algorithm questions. If you're really stuck on a question, your last resort can be to enumerate through the possible data structures (thankfully there aren't that many of them) and consider whether each of them can be applied to the problem. This has worked for me sometimes.
+- Generally, to improve the speed, we can either choose a more appropriate data structure/algorithm or use more memory. It's a classic space/time tradeoff.
+- Data structures are your weapons. Choosing the right weapon for the right battle is the key to victory. Be very familiar about the strengths of each data structure and the time complexities for its various operations.
+- Data structures can be augmented to achieve efficient time complexities across different operations. For example, a hash map can be used together with a doubly-linked list to achieve O(1) time complexity for both the `get` and `put` operation in an [LRU cache](https://leetcode.com/problems/lru-cache/).
+- Hashes/maps are probably the most commonly used data structure for algorithm questions. If you are stuck on a question, your last resort can be to enumerate through the possible data structures (thankfully there aren't that many of them) and consider whether each of them can be applied to the problem. This has worked for me sometimes.
 
 ## Sequence
 
-- Arrays and strings are considered sequences (an array is a sequence of characters). There are overlapping tips for dealing with arrays and strings which will be covered here.
+- Arrays and strings are considered sequences (a string is a sequence of characters). There are tips relevant for dealing with both arrays and strings which will be covered here.
 - Corner cases:
   - Empty sequence.
   - Sequence with 1 or 2 elements.
-  - Sequence with all duplicate elements.
+  - Sequence with repeated elements.
 - Are there duplicate values in the sequence, would it affect the answer?
 - Check for sequence out of bounds.
 - Be mindful about slicing or concatenating sequences in your code. Typically, slicing and concatenating sequences require O(n) time. Use start and end indices to demarcate a subarray/substring where possible.
 - Sometimes you can traverse the sequence from the right rather than from the left.
 - Master the [sliding window technique](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems) that applies to many substring/subarray problems.
-- When you are given two sequences to process, having two indices to traverse/compare the two sequences is quite common. For example, we use the same approach to merge two sorted arrays.
+- When you are given two sequences to process, it is common to have one index per sequence to traverse/compare the both of them. For example, we use the same approach to merge two sorted arrays.
 
 ## Array
 
-- Is the array sorted or partially sorted? If it is, some form of binary search should be possible.
+- Is the array sorted or partially sorted? If it is, some form of binary search should be possible. This also usually means that the interviewer is looking for a solution that is faster than O(n).
 - Can you sort the array? Sometimes sorting the array first may significantly simplify the problem. Make sure that the order of array elements do not need to be preserved before attempting a sort.
 - For questions where summation or multiplication of a subarray is involved, pre-computation using hashing or a prefix/suffix sum/product might be useful.
 - If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number.
@@ -262,7 +263,7 @@ def traverse(matrix):
   - An interval totally consumed within another interval.
   - Duplicate intervals.
 - Do clarify with the interviewer whether `[1, 2]` and `[2, 3]` are considered overlapping intervals as it affects how you will write your equality checks.
-- A common routine for interval questions is to sort the array of intervals by each intervarl's starting value.
+- A common routine for interval questions is to sort the array of intervals by each interval's starting value.
 - Be familiar with writing code to check if two intervals overlap and merging two overlapping intervals:
 
 ```py
@@ -314,7 +315,7 @@ def merge_overlapping_intervals(a, b):
 - If code involves division or modulo, remember to check for division or modulo by 0 case.
 - When a question involves "a multiple of a number", perhaps modulo might be useful.
 - Check for and handle overflow/underflow if you are using a typed language like Java and C++. At the very least, mention that overflow/underflow is possible and ask whether you need to handle it.
-- Do account for negative numbers and floating point numbers. This may sound obvious, but under interview pressure, many obvious cases go unnoticed.
+- Consider negative numbers and floating point numbers. This may sound obvious, but under interview pressure, many obvious cases go unnoticed.
 - Sum of 1 to N = (n+1) * n/2
 - Sum of GP = 2<sup>0</sup> + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... 2<sup>n</sup> = 2<sup>n+1</sup> - 1
 - Permutations of N = N! / (N-K)!
@@ -351,7 +352,7 @@ transposed_matrix = zip(*matrix)
 
 ## Recursion
 
-- Always define a base case so that your recursion will end.
+- Remember to always define a base case so that your recursion will end.
 - Useful for permutation and tree-based questions.
 - Recursion implicitly uses a stack. Hence all recursive approaches can be rewritten iteratively using a stack.
 - Beware of cases where the recursion level goes too deep and causes a stack overflow (in Python the default limit is 1000).
@@ -359,30 +360,30 @@ transposed_matrix = zip(*matrix)
 
 ## String
 
-- Please read the above tips on [Sequences](#sequences) because they apply to strings too.
+- Please read the above tips on [Sequence](#sequence) because they apply to strings too.
 - Corner cases:
   - Strings with only one distinct character.
 - Ask about input character set and case sensitivity. Usually the characters are limited to lower case Latin characters, i.e. a-z.
-- When you need to compare strings where the order isn't important (like anagram), you may consider using a hash map as a counter. If your language has a built-in `Counter` class like Python, use that instead.
-- If you need to keep a counter of characters, a common mistake to make is to say that the space complexity required for the counter is O(n). The space required for a counter is O(1) not O(n), because the upper bound is the range of characters, which is usually a fixed constant, typically 26 when the input set is just lower case Latin characters.
+- When you need to compare strings where the order isn't important (like anagram), you may consider using a hash map as a counter. If your language has a built-in `Counter` class like Python, ask to use that instead.
+- If you need to keep a counter of characters, a common mistake to make is to say that the space complexity required for the counter is O(n). The space required for a counter is O(1) not O(n), because the upper bound is the range of characters which is usually a fixed constant of 26 when the input set is just lower case Latin characters.
 - Common data structure for looking up strings efficiently:
   - [Trie / Prefix Tree](https://www.wikiwand.com/en/Trie)
   - [Suffix Tree](https://www.wikiwand.com/en/Suffix_tree)
 - Common string algorithms:
-  - [KMP](https://www.wikiwand.com/en/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) for efficient searching of substring. Quite complicated.
   - [Rabin Karp](https://www.wikiwand.com/en/Rabin%E2%80%93Karp_algorithm) for efficient searching of substring using a rolling hash.
+  - [KMP](https://www.wikiwand.com/en/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) for efficient searching of substring.
 
 #### Non-repeating Characters
 
 - Use a 26-bit bitmask to indicate which lower case latin characters are inside the string.
 
-~~~
+```py
 mask = 0
 for c in set(word):
   mask |= (1 << (ord(c) - ord('a')))
-~~~
+```
 
-- To determine if two strings have common characters, perform `&` on the two bitmasks and if the result is non-zero, the two strings do have common characters. `mask_a & mask_b > 0`
+- To determine if two strings have common characters, perform `&` on the two bitmasks and if the result is non-zero, the two strings do have common characters: `mask_a & mask_b > 0`.
 
 #### Anagram
 
@@ -393,13 +394,13 @@ for c in set(word):
 
 #### Palindrome
 
-- The order within the string matters, so hash maps are usually not helpful.
+- The order of characters within the string matters, so hash maps are usually not helpful.
 - Ways to determine if a string is a palindrome:
   - Reverse the string and it should be equal to itself.
-  - Have two pointers at the start and end of the string, move inwards till they meet. All the characters should be the same.
-- When a question is about counting the number of palindromes, a common trick is to have two pointer that move outwards, away from the middle. Note that palindromes can be even/odd length, and that for each middle pivot character, you would need to check twice, once including the character, and once without.
+  - Have two pointers at the start and end of the string, move inwards till they meet. At any point in time the characters at both pointers should match.
+- When a question is about counting the number of palindromes, a common trick is to have two pointer that move outwards, away from the middle. Note that palindromes can be even/odd length, and that for each middle pivot position, you would need to check twice, once including the character, and once without.
   - For substrings, you can terminate early once there is no match.
-  - For subsequences, use dynamic programming as there are overlapping subproblems. Check out [here](https://leetcode.com/problems/longest-palindromic-subsequence/).
+  - For subsequences, use dynamic programming as there are overlapping subproblems. Check out [this question](https://leetcode.com/problems/longest-palindromic-subsequence/).
 
 ##### Questions
 
@@ -424,7 +425,7 @@ for c in set(word):
 - When you are asked to traverse a tree by level, use depth-first search.
 - Sometimes it is possible that your recursive function needs to return two values.
 - If the question involves summation of nodes along the way, be sure to check whether nodes can be negative.
-- You should be very familiar with writing pre-order, in-order and post-order traversal recursively. As an extension, challenge yourself by writing them iteratively. Sometimes interviewers do ask candidates for the iterative approach, especially if they finish writing the recursive approach too fast. 😂
+- You should be very familiar with writing pre-order, in-order and post-order traversal recursively. As an extension, challenge yourself by writing them iteratively. Sometimes interviewers do ask candidates for the iterative approach, especially if the candidate finishes writing the recursive approach too fast. 😂
 
 **Binary Tree**
 
@@ -432,7 +433,9 @@ for c in set(word):
 
 **Binary Search Tree**
 
-- In-order traversal will give you all elements in order.
+- In-order traversal of a BST will give you all elements in order.
+- Be very familiar with the properties of a BST and validating that a binary tree is a BST. This comes up more often than expected.
+- When a question involves a BST, the interviewer is usually looking for a solution which runs faster than O(n).
 
 ##### Questions
 
