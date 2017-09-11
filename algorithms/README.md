@@ -266,11 +266,11 @@ def traverse(matrix):
 - Be familiar with writing code to check if two intervals overlap and merging two overlapping intervals:
 
 ```py
-def is_overlap(intvl1, intvl2):
-  return intvl2[0] < intvl1[1] < intvl2[1] or intvl1[0] < intvl2[1] < intvl1[1]
+def is_overlap(a, b):
+  return a[0] < b[1] and b[0] < a[1]
 
-def merge_overlapping_intervals(intvl1, intvl2):
-  return [min(intvl1[0], intvl2[0]), max(intvl1[1], intvl2[1])]
+def merge_overlapping_intervals(a, b):
+  return [min(a[0], b[0]), max(a[1], b[1])]
 ```
 
 ##### Questions
