@@ -7,7 +7,7 @@ DOM
 
 ## Node API
 
-Listing out the essential and more common APIs. It is important to know how to traverse and manipulate the DOM in vanilla JS without jQuery.
+Here's a list of the essential and more common DOM `Node` APIs. It is important to know how to traverse and manipulate the DOM in vanilla JS without jQuery.
 
 **Properties**
 
@@ -16,7 +16,7 @@ Listing out the essential and more common APIs. It is important to know how to t
 - `Node.lastChild`
 - `Node.nextSibling` - Returns a `Node` representing the next node in the tree, or `null` if there isn't such a node.
 - `Node.nodeName` - `DIV`, `SPAN`, etc. Note that it is in upper case in HTML documents, and has the same value as `Element.tagName`.
-- `Node.parentNode` - Returns a `Node` that is the parent of this node. If there is no such node, like if this node is the top of the tree or if doesn't participate in a tree, this property returns `null`.
+- `Node.parentNode` - Returns a `Node` that is the parent of this node. If there is no such node, like if this node is the top of the tree or if it doesn't participate in a tree, this property returns `null`.
 - `Node.parentElement` - Returns an `Element` that is the parent of this node. If the node has no parent, or if that parent is not an `Element`, this property returns `null`.
 - `Node.previousSibling` - Returns a `Node` representing the previous node in the tree, or `null` if there isn't such a node.
 - `Node.textContent` - Returns / Sets the textual content of an element and all its descendants.
@@ -33,13 +33,13 @@ Listing out the essential and more common APIs. It is important to know how to t
 
 ## Element API
 
-Listing out the essential and more common APIs. It is important to know how to traverse and manipulate the DOM in vanilla JS without jQuery.
+Here's a list of the essential and more common DOM `Element` APIs. It is important to know how to traverse and manipulate the DOM in vanilla JS without jQuery.
 
 **Properties**
 
 - `Element.attributes` - Returns a `NamedNodeMap` object containing the assigned attributes of the corresponding HTML element.
 - `Element.classList` - Returns a `DOMTokenList` containing the list of class attributes.
-  - `DOMTokenList.add(String [, String])` - Add specified class values. If these classes already exist in attribute of the element, then they are ignored.
+  - `DOMTokenList.add(String [, String])` - Add specified class values. If these classes already exist in attribute of the element, they are ignored.
   - `DOMTokenList.remove(String [, String])` - Remove specified class values.
   - `DOMTokenList.toggle(String [, force])` - Toggle specified class value. If second argument is present and evaluates to `true`, add the class value, else remove it.
   - `DOMTokenList.contains(String)` - Checks if specified class value exists in class attribute of the element.
@@ -51,15 +51,15 @@ Listing out the essential and more common APIs. It is important to know how to t
 **Methods**
 
 - `EventTarget.addEventListener(type, callback, options)` - Registers an event handler to a specific event type on the element. Read up more on the `options` [here](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
+- `EventTarget.removeEventListener(type, callback, options)` - Removes an event listener from the element. Read up more on the `options` [here](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener).
 - `Element.closest(selectors)` - Returns the closest ancestor of the current element (or the current element itself) which matches the selectors given in parameter. If there isn't such an ancestor, it returns `null`.
 - `Element.getElementsByClassName(classNames)`- Returns a live `HTMLCollection` that contains all descendants of the current element that possess the list of classes given in the parameter.
 - `Element.getElementsByTagName(tagName)` - Returns a live `HTMLCollection` containing all descendant elements, of a particular tag name, from the current element.
 - `Element.querySelector(selectors)` - Returns the first `Node` which matches the specified selector string relative to the element.
 - `Element.querySelectorAll(selectors)` - Returns a `NodeList` of nodes which match the specified selector string relative to the element.
-- `ChildNode.remove()` - Removes the element from the children list of its parent.
-- `Element.removeAttribute(attrName)` - Removes the named attribute from the current node.
-- `EventTarget.removeEventListener(type, callback, options)` - Removes an event listener from the element. Read up more on the `options` [here](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener).
+- `ChildNode.remove()` - Removes the element from the children list of its parent. TODO: Check whether it's `Element` or `ChildNode`.
 - `Element.setAttribute(attrName, value)` - Sets the value of a named attribute of the current node.
+- `Element.removeAttribute(attrName)` - Removes the named attribute from the current node.
 
 ## Document API
 
@@ -71,7 +71,7 @@ Listing out the essential and more common APIs. It is important to know how to t
   - The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading. Similar to `jQuery.ready()` but different because `$.ready` will execute immediately if the `DOMContentLoaded` event has already fired.
   - This corresponds to `document.readyState === 'interactive'`.
 - `window.onload = function() {}`
-  -  `window`'s `load` event is only fired after the DOM and all assets have loaded.
+  - `window`'s `load` event is only fired after the DOM and all assets have loaded.
   - This corresponds to `document.readyState === 'complete'`.
 
 ## Questions

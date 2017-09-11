@@ -19,7 +19,7 @@ Answers to [Front-end Job Interview Questions - HTML Questions](https://github.c
 
 `doctype` is an abbreviation for document type. It is a declaration used in HTML5 to distinguish between a standards-compliant parsing mode and a quirks parsing mode. Hence its presence tells the browser to parse and render the webpage in standards mode.
 
-Moral of the story, just add `<!DOCTYPE html>` to the start of your page.
+Moral of the story - just add `<!DOCTYPE html>` at the start of your page.
 
 ###### References
 
@@ -65,7 +65,7 @@ Basically the problems lie in the differences between parsing HTML and XML as me
 
 #### How do you serve a page with content in multiple languages?
 
-The question is a little vague, I will assume that it is asking about the most common case, which is how to serve a page with content available in multiple languages, but the content within the page is only in a single language.
+The question is a little vague, I will assume that it is asking about the most common case, which is how to serve a page with content available in multiple languages, but the content within the page should be displayed only in one consistent language.
 
 When an HTTP request is made to a server, the requesting user agent usually sends information about language preferences, such as in the `Accept-Language` header. The server can then use this information to return a version of the document in the appropriate language if such an alternative is available. The returned HTML document should also declare the `lang` attribute in the `<html>` tag, such as `<html lang="en">...</html>`.
 

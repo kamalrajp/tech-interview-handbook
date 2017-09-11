@@ -42,7 +42,7 @@ Performance
 
 ## Measuring
 
-- [Navigation Timing API](https://developer.mozilla.org/en/docs/Web/API/Navigation_timing_API) is a JavaScript API for accurately measuring performance on the web. The API provides a simple way to get accurate and detailed timing statistics—natively—for page navigation and load events.
+- [Navigation Timing API](https://developer.mozilla.org/en/docs/Web/API/Navigation_timing_API) is a JavaScript API for accurately measuring performance on the web. The API provides a simple way to get accurate and detailed timing statistics natively for page navigation and load events.
   - `performance.timing`: An object with the timestamps of the various events on the page. Some uses:
     - Network latency: `responseEnd` - `fetchStart`.
     - The time taken for page load once the page is received from the server: `loadEventEnd` - `responseEnd`.
