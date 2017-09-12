@@ -11,6 +11,7 @@ Learn the [STAR](https://en.wikipedia.org/wiki/Situation,_task,_action,_result) 
 ## General
 
 - Why do you want to work for X company?
+- Why do you want to leave your current/last company?
 - Tell me about a time where you had a conflict with a co-worker.
 - What project are you currently working on?
 - What is the most challenging aspect of your current project?
@@ -133,6 +134,16 @@ While loving to travel or appreciating Airbnb's growth may be good answers, try 
 - Where do you see yourself in 5 years?
 - Why do you want to work here?
 - How do you handle disagreements with coworkers?
+
+## Stripe
+
+- How do you stay up to date with latest technologies?
+- Explain a project that you worked on recently that was difficult.
+- Where do you see yourself in five years?
+
+## Twitter
+
+- What would your previous boss have said your biggest strength was?
 
 #### References
 
