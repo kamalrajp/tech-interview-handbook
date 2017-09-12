@@ -36,22 +36,23 @@ Java is a decent choice too but having to constantly declare types in your code 
 
 One exception to the convention of allowing you to "pick any programming language you want" is when you are interviewing for a domain-specific position, such as Front End/iOS/Android Engineer roles, in which you would need to be familiar with coding algorithms in JavaScript, Objective-C/Swift and Java respectively. If you need to use a data structure that the language does not support, such as a Queue or Heap in JavaScript, perhaps try asking the interviewer whether you can assume that you have a data structure that implements certain methods with specified time complexities. If the implementation of that data structure is not crucial to solving the problem, the interviewer will usually allow it. In reality, being aware of existing data structures and selecting the appropriate ones to tackle the problem at hand is more important than knowing the intricate implementation details.
 
-## Master the Language
+## Revise your CS101
 
-Next, gain familiarity and mastery of your chosen programming language:
+If you have been out of college for a while, it will be highly advisable to revise the CS fundamentals — Algorithms and Data Structures. Personally I prefer to revise as I practiced so I scanned through my college notes and revised the various algorithms as I worked on the algorithm problems from LeetCode and Cracking the Coding Interview.
+
+This [interviews repository](https://github.com/kdn251) by Kevin Naughton Jr. served as a quick refresher for me.
+
+## Mastery through Practice
+
+Next, gain familiarity and mastery of the algorithms and data structures in your chosen programming language:
 
 1. Practice coding algorithms using your chosen language. While [Cracking the Coding Interview](http://www.crackingthecodinginterview.com/) is a good resource for practice, I prefer being able to type code, run it and get instant feedback. There are various Online Judges such as [LeetCode](https://leetcode.com/), [HackerRank](https://www.hackerrank.com/) and [CodeForces](http://codeforces.com/) for you to practice questions online and get used to the language. From experience, LeetCode questions are the most similar to the kind of questions being asked in interviews whereas HackerRank and CodeForces questions are more similar to competitive programming questions. If you practice enough LeetCode questions, there is a good chance that you would have seen/done your actual interview question (or some variant) on LeetCode before.
 2. Learn and understand the time and space complexities of the common operations in your chosen language. For Python, this [page](https://wiki.python.org/moin/TimeComplexity) will come in handy. Also find out the underlying sorting algorithm that is being used in the language's `sort()` function and its time and space complexity (in Python its Timsort which is a hybrid sort). After completing a question on LeetCode, I usually add the time and space complexities of the written code as comments above the function body to remind myself to analyze the algorithm after I am done with the implementation.
 3. Read up on the recommended coding style for your language and stick to it. If you have chosen Python, refer to the PEP 8 Style Guide. If you have chosen Java, refer to Google’s Java Style Guide.
 4. Find out and be familiar with the common pitfalls and caveats of the language. If you point out them out during the interview and intelligently avoid falling into them, you will usually impress the interviewer and that results in bonus points in your feedback, regardless of whether the interviewer is familiar with the language or not.
+5. Gain a broad exposure to questions from various topics. In the second half of the article I mention algorithm topics and practice questions for each topic. Do around 100–200 LeetCode questions and you should be good.
 
 Practice, practice and more practice!
-
-## Revise your CS101
-
-If you have been out of college for a while, it will be highly advisable to revise the CS fundamentals — Algorithms and Data Structures. Personally I prefer to revise as I practiced so I scanned through my college notes and revised the various algorithms as I worked on the LeetCode problems.
-
-This [interviews repository](https://github.com/kdn251) by Kevin Naughton Jr. served as a quick refresher for me.
 
 ## Phases of a Coding Interview
 
@@ -106,7 +107,7 @@ If your interviewer is happy with the solution, the interview usually ends here.
 
 ## Practicing via Mock Interviews
 
-Interviewing is a skill that you can get better at. The steps mentioned above can be rehearsed over and over again until you have fully internalized them and following those steps become second nature to you. To get more practice for interviews, I would recommend finding a friend to partner with and the both of you can practice interviewing each other.
+Interviewing is a skill that you can get better at. The steps mentioned above can be rehearsed over and over again until you have fully internalized them and following those steps become second nature to you. A good way to practice is to find a friend to partner with and the both of you can take turns to interview each other.
 
 A great resource for practicing mock coding interviews would be [interviewing.io](https://interviewing.io/). interviewing.io is a platform that matches interviewees with interviewers from top companies and provides an environment for interviews to be conducted anonymously. At the end of the interview, both interviewer and interviewees can provide feedback to each other for the purpose of improvement. Doing well in your mock interviews will unlock the jobs page and allow candidates to book interviews (also anonymously) with top companies like Uber, Lyft, Quora, Asana and more. For those who are totally new to technical interviews, you can even view a [demo interview](https://start.interviewing.io/interview/9hV9r4HEONf9/replay) on the site (requires sign in).
 
@@ -136,7 +137,7 @@ The next section dives deep into practical tips for specific topics of algorithm
 - Generally, to improve the speed of a program, we can either choose a more appropriate data structure/algorithm or use more memory. It's a classic space/time tradeoff.
 - Data structures are your weapons. Choosing the right weapon for the right battle is the key to victory. Be very familiar about the strengths of each data structure and the time complexities for its various operations.
 - Data structures can be augmented to achieve efficient time complexities across different operations. For example, a hash map can be used together with a doubly-linked list to achieve O(1) time complexity for both the `get` and `put` operation in an [LRU cache](https://leetcode.com/problems/lru-cache/).
-- Hashes/maps are probably the most commonly used data structure for algorithm questions. If you are stuck on a question, your last resort can be to enumerate through the possible data structures (thankfully there aren't that many of them) and consider whether each of them can be applied to the problem. This has worked for me sometimes.
+- Hashmaps are probably the most commonly used data structure for algorithm questions. If you are stuck on a question, your last resort can be to enumerate through the possible data structures (thankfully there aren't that many of them) and consider whether each of them can be applied to the problem. This has worked for me sometimes.
 
 ## Sequence
 
@@ -414,6 +415,7 @@ for c in set(word):
 
 #### Anagram
 
+- An anagram is direct word switch or word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once. In interviews, usually we are only bothered with words without spaces in them.
 - Determine if two strings are anagrams:
   - Sorting both strings should produce the same resulting string.
   - If we map each character to a prime number and we multiply each mapped number together, anagrams should have the same multiple (prime factor decomposition).
@@ -421,10 +423,11 @@ for c in set(word):
 
 #### Palindrome
 
-- The order of characters within the string matters, so hash maps are usually not helpful.
+- A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
 - Ways to determine if a string is a palindrome:
   - Reverse the string and it should be equal to itself.
   - Have two pointers at the start and end of the string, move inwards till they meet. At any point in time the characters at both pointers should match.
+- The order of characters within the string matters, so hash maps are usually not helpful.
 - When a question is about counting the number of palindromes, a common trick is to have two pointer that move outwards, away from the middle. Note that palindromes can be even/odd length, and that for each middle pivot position, you would need to check twice, once including the character, and once without.
   - For substrings, you can terminate early once there is no match.
   - For subsequences, use dynamic programming as there are overlapping subproblems. Check out [this question](https://leetcode.com/problems/longest-palindromic-subsequence/).
@@ -432,12 +435,15 @@ for c in set(word):
 #### Practice Questions
 
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
 - [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram)
 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 
 ## Tree
 
