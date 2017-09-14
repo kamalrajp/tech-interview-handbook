@@ -10,7 +10,10 @@ Here are some good questions to ask at the end of the interview, extracted from 
 - What are some weaknesses of the organization?
 - What does a typical day look like for you?
 - **What are you most proud about in your career so far?**
-- What is the most important thing you have learnt from working here?
+- What do you think the company can improve at?
+- What is the most important/valuable thing you have learnt from working here?
+- How would you see yourself growing at this company in the next few years?
+- What do you wish you were told about the company before you joined?
 
 ## Culture
 
